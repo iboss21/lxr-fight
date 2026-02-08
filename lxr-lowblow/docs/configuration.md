@@ -298,15 +298,18 @@ Config.Animation = {
 
 ### Alternative Animations
 
+Alternative kick variations:
+```lua
+-- High kick
+Config.Animation.attacker.anim = 'kick_high'
+
+-- Low kick
+Config.Animation.attacker.anim = 'kick_low'
+```
+
 Punch animation:
 ```lua
 Config.Animation.attacker.anim = 'punch_standing'
-```
-
-Headbutt animation (if available in your game):
-```lua
-Config.Animation.attacker.dict = 'melee@unarmed@streamed_core'
-Config.Animation.attacker.anim = 'headbutt_standing'
 ```
 
 ### Victim Ragdoll
