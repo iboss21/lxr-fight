@@ -276,8 +276,8 @@ Config.Damage = {
 -- Attacker animation (kick animation)
 Config.Animation = {
     attacker = {
-        dict = 'script_common@other@melee@unarmed@streamed_core',
-        anim = 'kick_stand_r',
+        dict = 'melee@unarmed@streamed_core',
+        anim = 'kick_standing',
         duration = 1500,         -- Animation duration in milliseconds
         flag = 0,                -- Animation flag (0 = normal, 1 = repeat, etc.)
         blendIn = 0.2,           -- Blend in speed

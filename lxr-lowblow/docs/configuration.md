@@ -266,8 +266,8 @@ Applies damage to stamina/core stats (if framework supports it).
 ```lua
 Config.Animation = {
     attacker = {
-        dict = 'script_common@other@melee@unarmed@streamed_core',
-        anim = 'kick_stand_r',
+        dict = 'melee@unarmed@streamed_core',
+        anim = 'kick_standing',
         duration = 1500,
         flag = 0,
         blendIn = 0.2,
@@ -288,7 +288,7 @@ Config.Animation = {
 | Setting | Type | Default | Description |
 |---------|------|---------|-------------|
 | `dict` | string | (see above) | Animation dictionary |
-| `anim` | string | `'kick_stand_r'` | Animation name |
+| `anim` | string | `'kick_standing'` | Animation name |
 | `duration` | integer | `1500` | Animation length (ms) |
 | `flag` | integer | `0` | Animation flags |
 | `blendIn` | float | `0.2` | Blend in speed |
@@ -298,15 +298,18 @@ Config.Animation = {
 
 ### Alternative Animations
 
-Punch animation:
+Alternative kick variations:
 ```lua
-Config.Animation.attacker.anim = 'punch_stand_r'
+-- High kick
+Config.Animation.attacker.anim = 'kick_high'
+
+-- Low kick
+Config.Animation.attacker.anim = 'kick_low'
 ```
 
-Headbutt animation:
+Punch animation:
 ```lua
-Config.Animation.attacker.dict = 'script_common@other@melee@unarmed@streamed_core'
-Config.Animation.attacker.anim = 'headbutt_attack'
+Config.Animation.attacker.anim = 'punch_standing'
 ```
 
 ### Victim Ragdoll

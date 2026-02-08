@@ -25,7 +25,7 @@ This ensures the action feels natural and prevents unrealistic "back attacks" th
 ### 2. Kick Animation
 
 When executed, the attacker plays a realistic **kick animation** from the game's native animation library:
-- Animation: `kick_stand_r` from `script_common@other@melee@unarmed@streamed_core`
+- Animation: `kick_standing` from `melee@unarmed@streamed_core`
 - Duration: 1.5 seconds (configurable)
 - Optional forward lunge for added impact feel
 
