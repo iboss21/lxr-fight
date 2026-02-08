@@ -227,7 +227,7 @@ local function ExecuteLowBlow(targetPlayer)
         return
     end
     
-    if not AreFacingEachOther(playerPed, targetPed) then
+    if not IsFacingTarget(playerPed, targetPed) then
         Framework.Notify(nil, 'error', Framework.GetLocale('not_facing'))
         return
     end
