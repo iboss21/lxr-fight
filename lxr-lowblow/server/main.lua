@@ -216,7 +216,7 @@ RegisterNetEvent('lxr-lowblow:server:executeLowBlow', function(targetId, distanc
     
     -- Validate target is alive
     local targetPed = GetPlayerPed(targetId)
-    if IsEntityDead(targetPed) then
+    if GetEntityHealth(targetPed) <= 0 then
         Framework.Notify(source, 'error', Framework.GetLocale('must_be_alive'))
         return
     end
