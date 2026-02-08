@@ -1,0 +1,56 @@
+# LXR LowBlow - Git Ignore
+# wolves.land | iBoss21
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Dependencies (if any future)
+node_modules/
+vendor/
+
+# Build artifacts (if any future)
+dist/
+build/
+*.min.js
+*.min.lua
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test files
+test/
+tests/
+*.test.lua
+
+# Local configuration overrides
+config.local.lua
+settings.local.lua
+
+# Screenshots (actual files - keep folder structure)
+# Uncomment if you want to exclude actual screenshot files
+# /docs/assets/screenshots/*.png
+# /docs/assets/screenshots/*.jpg
+# /docs/assets/screenshots/*.gif
+
+# Debug output
+debug.txt
+debug.log
+output.txt
